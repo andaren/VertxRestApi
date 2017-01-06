@@ -28,6 +28,8 @@ public class Hello extends AbstractVerticle{
 
     private Map<Integer, Whisky> products = new LinkedHashMap<Integer, Whisky>();
 
+    private JDBCClient jdbc;
+
     @Override
     public void start(Future<Void> fu) throws Exception {
 
